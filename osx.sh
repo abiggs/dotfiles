@@ -144,7 +144,7 @@ defaults write com.apple.Safari HomePage -string "about:blank"
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Hides RSS Feeds distinguished folder that is placeed there by Exchange.
-/usr/libexc/PlistBuddy -c "Set :mboxes:'RSS Feeds':IMAPMailboxAttributes 512" /Users/abiggs/Library/Mail/V2/EWS-bigg1005@exchange.ou.edu/.mboxCache.plist
+/usr/libexec/PlistBuddy -c "Set :mboxes:'RSS Feeds':IMAPMailboxAttributes 512" /Users/abiggs/Library/Mail/V2/EWS-bigg1005@exchange.ou.edu/.mboxCache.plist
 
 ###############################################################################
 # Terminal                                                                    #
