@@ -18,7 +18,7 @@ ohmyzsh() {
 }
 
 # Install Homebrew.
-# source ./homebrew.sh
+source ./homebrew.sh
 # source ./ruby.sh
 # source ./node.sh
 # source ./capistrano.sh
