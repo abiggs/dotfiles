@@ -26,16 +26,16 @@ ohmyzsh() {
 }
 
 Install Homebrew.
-source ./homebrew.sh
-source ./ruby.sh
-source ./node.sh
-source ./capistrano.sh
-source ./ssh.sh
-source ./links.sh
+source ~/.dotfiles/homebrew.sh
+source ~/.dotfiles/ruby.sh
+source ~/.dotfiles/node.sh
+source ~/.dotfiles/capistrano.sh
+source ~/.dotfiles/ssh.sh
+source ~/.dotfiles/links.sh
 
 gitfiles
 ohmyzsh
 
-source ./osx.sh
+source ~/.dotfiles/osx.sh
 
 printf '\033[0;34m%s\033[0m\n' "Dotfiles installed."
