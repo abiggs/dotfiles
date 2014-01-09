@@ -25,7 +25,7 @@ ohmyzsh() {
     curl -L https://raw.github.com/abiggs/oh-my-zsh/master/tools/install.sh | sh
 }
 
-Install Homebrew.
+# Install Homebrew.
 source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/ruby.sh
 source ~/.dotfiles/node.sh
