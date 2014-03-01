@@ -40,6 +40,9 @@ brew install grc
 # Install Spark
 brew install spark
 
+# Install wget
+brew install wget
+
 # Install Tree
 brew install tree
 
