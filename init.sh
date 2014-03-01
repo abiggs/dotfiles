@@ -25,6 +25,13 @@ ohmyzsh() {
     curl -L https://raw.github.com/abiggs/oh-my-zsh/master/tools/install.sh | sh
 }
 
+laravel() {
+    printf '\033[0;34m%s\033[0m\n' "Installing Larvel..."
+    curl -o /usr/local/bin/laravel -L http://laravel.com/laravel.phar
+    chmod +x laravel
+
+}
+
 # Install Homebrew.
 source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/ruby.sh
@@ -35,6 +42,7 @@ source ~/.dotfiles/links.sh
 
 gitfiles
 ohmyzsh
+laravel
 
 source ~/.dotfiles/osx.sh
 
