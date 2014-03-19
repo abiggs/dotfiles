@@ -116,7 +116,7 @@ chflags hidden ~/oradiag_abiggs
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Empty Trash securely by default
-defaults write com.apple.finder EmptyTrashSecurely -bool true
+# defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Use AirDrop over every interface. srsly this should be a default.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
