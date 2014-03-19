@@ -49,6 +49,19 @@ brew install tree
 # Install node
 brew install node
 
+# Install Homebrew Cask for installing Mac apps.
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+# Install Vagrant
+brew cask install vagrant
+
+# Install VirtualBox
+brew cask install virtualbox
+
+# Links Brew Casks installed apps to Alfred
+brew cask alfred link
+
 # Install PHP 5.4
 brew tap homebrew/dupes
 brew tap josegonzalez/homebrew-php
