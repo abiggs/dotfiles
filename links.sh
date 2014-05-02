@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 printf '\033[0;34m%s\033[0m\n' "Creating links..."
 
-apps=("PremiumSoft CyberTech" "Sublime Text 3" TextExpander Tower)
+apps=(TextExpander)
 
 source_dir=~/Library/Application\ Support
 target_dir=~/Dropbox/Synced\ Settings
