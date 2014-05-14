@@ -20,3 +20,6 @@ else
         rbenv rehash
     fi
 fi
+
+# Installs scss-lint for Sublime Text linting.
+gem install scss-lint
