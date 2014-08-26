@@ -25,6 +25,17 @@ ohmyzsh() {
     curl -L https://raw.github.com/abiggs/oh-my-zsh/master/tools/install.sh | sh
 }
 
+changeshell() {
+    printf '\033[0;34m%s\033[0m\n' "Changing shell..."
+    if [ `grep /usr/local/bin/zsh /etc/shells` ];
+    then
+        echo /usr/local/bin/zsh | chsh -s /usr/local/bin/zsh;
+    else
+        echo /usr/local/bin/zsh | sudo tee -a /etc/shells;
+        chsh -s /usr/local/bin/zsh;
+    fi
+}
+
 laravel() {
     printf '\033[0;34m%s\033[0m\n' "Installing Larvel..."
     curl -o /usr/local/bin/laravel -L http://laravel.com/laravel.phar
@@ -43,6 +54,7 @@ source ~/.dotfiles/links.sh
 gitfiles
 ohmyzsh
 laravel
+changeshell
 
 source ~/.dotfiles/osx.sh
 
