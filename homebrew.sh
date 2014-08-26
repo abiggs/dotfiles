@@ -67,6 +67,10 @@ brew tap homebrew/dupes
 brew tap josegonzalez/homebrew-php
 brew install php54
 
+# Install PHP code quality tools
+brew install php-code-sniffer
+brew install phpmd
+
 # Install Mcrypt for PHP 5.4. Required for Laravel.
 brew install php54-mcrypt
 
