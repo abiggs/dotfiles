@@ -38,8 +38,7 @@ changeshell() {
 
 laravel() {
     printf '\033[0;34m%s\033[0m\n' "Installing Larvel..."
-    curl -o /usr/local/bin/laravel -L http://laravel.com/laravel.phar
-    chmod +x laravel
+    composer global require "laravel/installer=~1.1"
 
 }
 
