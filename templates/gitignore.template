@@ -1,7 +1,6 @@
 .DS_Store
+.idea
 .svn
 *~
-*.sublime-project
-*.sublime-workspace
 *.swp
 *.rbc

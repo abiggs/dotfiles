@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-printf '\033[0;34m%s\033[0m\n' "Installing dotfiles..."
+read -p "Is this \"Jupiter\" or \"Mars\" or \"Pluto\"? " COMPUTER_NAME
+case $COMPUTER_NAME in
+    Jupiter ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Jupiter...";;
+    Mars ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Mars...";;
+    * ) echo "Please answer with \"Jupiter\" or \"Mars\"."; exit 0;;
+esac
 
 gitfiles() {
 
