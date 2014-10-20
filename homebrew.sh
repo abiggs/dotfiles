@@ -49,6 +49,9 @@ brew install tree
 # Install node
 brew install node
 
+# Install Mackup
+brew install mackup
+
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
 brew install brew-cask
