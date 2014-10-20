@@ -4,7 +4,7 @@
 if test ! $(which brew)
 then
 printf '\033[0;34m%s\033[0m\n' "Installing Homebrew..."
-curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install | ruby
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install | ruby
 else
   printf '\033[0;34m%s\033[0m\n' "Homebrew already installed. Updating Homebrew..."
   # Make sure we’re using the latest Homebrew
