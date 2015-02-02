@@ -234,7 +234,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # defaults write com.apple.finder DisableAllAnimations -bool true
 
 # Set softlink to Dropbox for Business folder
-ln -s "${HOME}/Dropbox (Univ. of Oklahoma)" Dropbox
+ln -s "${HOME}/Dropbox (Univ. of Oklahoma)" ${HOME}/Dropbox
 
 # Set Dropbox as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
