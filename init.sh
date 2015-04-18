@@ -53,7 +53,6 @@ laravel() {
 source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/ruby.sh
 source ~/.dotfiles/node.sh
-source ~/.dotfiles/capistrano.sh
 source ~/.dotfiles/ssh.sh
 
 gitfiles
