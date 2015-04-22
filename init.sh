@@ -45,6 +45,7 @@ changeshell() {
 composer() {
     printf '\033[0;34m%s\033[0m\n' "Installing Composer..."
     curl -sS https://getcomposer.org/installer | php
+    mv composer.phar /usr/local/bin/composer
 }
 
 laravel() {
