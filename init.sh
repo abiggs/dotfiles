@@ -42,6 +42,11 @@ changeshell() {
     fi
 }
 
+composer() {
+    printf '\033[0;34m%s\033[0m\n' "Installing Composer..."
+    curl -sS https://getcomposer.org/installer | php
+}
+
 laravel() {
     printf '\033[0;34m%s\033[0m\n' "Installing Larvel..."
     composer global require "laravel/installer=~1.1"
@@ -57,6 +62,7 @@ source ~/.dotfiles/ssh.sh
 
 gitfiles
 ohmyzsh
+composer
 laravel
 changeshell
 
