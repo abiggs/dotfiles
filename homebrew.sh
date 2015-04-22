@@ -59,14 +59,6 @@ brew cask install virtualbox
 # Links Brew Casks installed apps to Alfred
 brew cask alfred link
 
-# Install PHP 5.4
-brew tap homebrew/dupes
-brew tap josegonzalez/homebrew-php
-brew install php54
- 
-# Install Mcrypt for PHP 5.4. Required for Laravel.
-brew install php54-mcrypt
-
 # Install PHP code quality tools
 brew install php-code-sniffer
 brew install phpmd
