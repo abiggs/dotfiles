@@ -63,9 +63,6 @@ brew cask alfred link
 brew install php-code-sniffer
 brew install phpmd
 
-# Dependency management for PHP.
-brew install josegonzalez/php/composer
-
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
 # Remove outdated versions from the cellar
