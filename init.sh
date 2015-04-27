@@ -26,6 +26,18 @@ gitfiles() {
     done
 }
 
+hosts() {
+    if grep -q "# Homestead Sites" "/etc/hosts";
+    then
+        printf '\033[0;34m%s\033[0m\n' "Hosts already configured."
+    else
+        printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
+        sudo bash -c "echo '# Homestead Sites' >> /etc/hosts"
+        sudo bash -c "echo 192.168.10.10    motivational.app >> /etc/hosts"
+        sudo bash -c "echo 192.168.10.10    newsoonersurvey.app >> /etc/ssh_config"
+    fi
+}
+
 ohmyzsh() {
     printf '\033[0;34m%s\033[0m\n' "Installing oh-my-zsh..."
     curl -L https://raw.github.com/abiggs/oh-my-zsh/master/tools/install.sh | sh
@@ -62,6 +74,7 @@ source ~/.dotfiles/node.sh
 source ~/.dotfiles/ssh.sh
 
 gitfiles
+hosts
 ohmyzsh
 composer
 laravel
