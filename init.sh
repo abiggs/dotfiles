@@ -34,7 +34,7 @@ hosts() {
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
         sudo bash -c "echo '# Homestead Sites' >> /etc/hosts"
         sudo bash -c "echo 192.168.10.10    motivational.app >> /etc/hosts"
-        sudo bash -c "echo 192.168.10.10    newsoonersurvey.app >> /etc/ssh_config"
+        sudo bash -c "echo 192.168.10.10    newsoonersurvey.app >> /etc/hosts"
     fi
 }
 
