@@ -7,6 +7,9 @@ npm install -g generator-webapp
 npm install -g generator-angular
 npm install -g generator-backbone
 
+# Installs jscs for Sublime Text linting.
+npm install -g jscs
+
 # Installs jshint for Sublime Text linting.
 npm install -g jshint
 
