@@ -1,4 +1,5 @@
 .DS_Store
+.env
 .idea
 .svn
 *~
@@ -6,3 +7,5 @@
 *.sublime-project
 *.sublime-workspace
 *.swp
+vendor/
+sftp-config.json
