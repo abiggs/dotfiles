@@ -56,9 +56,6 @@ brew cask install vagrant
 # Install VirtualBox
 brew cask install virtualbox
 
-# Links Brew Casks installed apps to Alfred
-brew cask alfred link
-
 # Install PHP code quality tools
 brew install php-code-sniffer
 brew install phpmd
