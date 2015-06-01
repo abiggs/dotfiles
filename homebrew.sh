@@ -56,10 +56,6 @@ brew cask install vagrant
 # Install VirtualBox
 brew cask install virtualbox
 
-# Install PHP code quality tools
-brew install php-code-sniffer
-brew install phpmd
-
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
 # Remove outdated versions from the cellar
