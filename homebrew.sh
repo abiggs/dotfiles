@@ -56,6 +56,10 @@ brew cask install vagrant
 # Install VirtualBox
 brew cask install virtualbox
 
+# Docker
+brew install boot2docker
+brew install docker-composer
+
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
 # Remove outdated versions from the cellar
