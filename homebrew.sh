@@ -23,7 +23,7 @@ brew install zsh
 brew install git
 
 # Install HUB (a GitHub git wrapper)
-brew install hub
+# brew install hub
 
 # Install Ruby Environment Management
 brew install rbenv
@@ -35,7 +35,7 @@ brew install ruby-build
 brew install coreutils
 
 # Install grc
-brew install grc
+# brew install grc
 
 # Install wget
 brew install wget
@@ -58,7 +58,7 @@ brew cask install virtualbox
 
 # Docker
 brew install boot2docker
-brew install docker-composer
+brew install docker-compose
 
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
