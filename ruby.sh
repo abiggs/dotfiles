@@ -24,4 +24,4 @@ fi
 # Installs scss-lint for Sublime Text linting.
 # sudo gem install scss-lint
 
-sudo gem install bundler
+gem install bundler
