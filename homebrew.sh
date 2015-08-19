@@ -57,8 +57,7 @@ brew cask install vagrant
 brew cask install virtualbox
 
 # Docker
-brew install boot2docker
-brew install docker-compose
+brew cask install dockertoolbox
 
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
