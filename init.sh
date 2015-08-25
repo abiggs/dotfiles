@@ -64,7 +64,10 @@ laravel() {
     printf '\033[0;34m%s\033[0m\n' "Installing Larvel..."
     composer global require "laravel/installer=~1.1"
     composer global require "laravel/homestead=~2.0"
+}
 
+sublimetext() {
+    ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 }
 
 # Install Homebrew.
@@ -78,6 +81,7 @@ hosts
 ohmyzsh
 composer
 laravel
+sublimetext
 changeshell
 
 source ~/.dotfiles/osx.sh
