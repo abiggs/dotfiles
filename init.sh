@@ -35,6 +35,8 @@ hosts() {
         sudo bash -c "echo '# Homestead Sites' >> /etc/hosts"
         sudo bash -c "echo 192.168.10.10    motivational.app >> /etc/hosts"
         sudo bash -c "echo 192.168.10.10    newsoonersurvey.app >> /etc/hosts"
+        sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
+        sudo bash -c "echo 192.168.99.100   classnav.dev iadvise.dev >> /etc/hosts"
     fi
 }
 
