@@ -11,17 +11,17 @@ else
        printf '\033[0;34m%s\033[0m\n' "rbenv version already installed."
     else
         # Install specific version of Ruby
-        # rbenv install 1.9.3-p448
+        rbenv install 1.9.3-p448
 
         # Set Ruby version as global version
-        # rbenv global 1.9.3-p448
+        rbenv global 1.9.3-p448
 
         # Refresh the Ruby environment
-        # rbenv rehash
+        rbenv rehash
     fi
 fi
 
 # Installs scss-lint for Sublime Text linting.
-# sudo gem install scss-lint
+# gem install scss-lint
 
 gem install bundler
