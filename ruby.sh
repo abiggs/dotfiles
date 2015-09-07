@@ -15,7 +15,7 @@ else
 
         # Set Ruby version as global version
         rbenv global 2.1.5
-
+        
         # Refresh the Ruby environment
         rbenv rehash
     fi
@@ -25,3 +25,6 @@ fi
 # gem install scss-lint
 
 gem install bundler
+
+# Refresh the Ruby environment
+rbenv rehash
