@@ -59,6 +59,9 @@ brew cask install virtualbox
 # Docker
 brew cask install dockertoolbox
 
+# sshuttle
+brew install sshuttle
+
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
 # Remove outdated versions from the cellar
