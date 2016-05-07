@@ -27,16 +27,13 @@ gitfiles() {
 }
 
 hosts() {
-    if grep -q "# Homestead Sites" "/etc/hosts";
+    if grep -q "# Docker Machine Sites" "/etc/hosts";
     then
         printf '\033[0;34m%s\033[0m\n' "Hosts already configured."
     else
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
-        sudo bash -c "echo '# Homestead Sites' >> /etc/hosts"
-        sudo bash -c "echo 192.168.10.10    motivational.app >> /etc/hosts"
-        sudo bash -c "echo 192.168.10.10    newsoonersurvey.app >> /etc/hosts"
         sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-        sudo bash -c "echo 192.168.99.100   classnav.dev evaluate.dev iadvise.dev >> /etc/hosts"
+        sudo bash -c "echo 127.0.0.1   classnav.dev evaluate.dev iadvise.dev >> /etc/hosts"
     fi
 }
 
@@ -64,8 +61,7 @@ composer() {
 
 laravel() {
     printf '\033[0;34m%s\033[0m\n' "Installing Larvel..."
-    composer global require "laravel/installer=~1.1"
-    composer global require "laravel/homestead=~2.0"
+    composer global require "laravel/installer"
 }
 
 sublimetext() {
@@ -76,7 +72,6 @@ sublimetext() {
 source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/ruby.sh
 source ~/.dotfiles/node.sh
-source ~/.dotfiles/ssh.sh
 
 gitfiles
 hosts
