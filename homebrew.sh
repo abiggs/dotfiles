@@ -22,9 +22,6 @@ brew install zsh
 # Install GIT
 brew install git
 
-# Install HUB (a GitHub git wrapper)
-# brew install hub
-
 # Install Ruby Environment Management
 brew install rbenv
 
@@ -33,9 +30,6 @@ brew install ruby-build
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
-
-# Install grc
-# brew install grc
 
 # Install wget
 brew install wget
@@ -49,15 +43,6 @@ brew install mackup
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
 brew install brew-cask
-
-# Install Vagrant
-brew cask install vagrant
-
-# Install VirtualBox
-brew cask install virtualbox
-
-# Docker
-brew cask install dockertoolbox
 
 # sshuttle
 brew install sshuttle
