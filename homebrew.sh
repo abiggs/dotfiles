@@ -40,12 +40,15 @@ brew install node
 # Install Mackup
 brew install mackup
 
+# sshuttle
+brew install sshuttle
+
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
-# sshuttle
-brew install sshuttle
+# Aerial screensaver
+brew cask install aerial
 
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
