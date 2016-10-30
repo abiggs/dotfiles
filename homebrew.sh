@@ -43,6 +43,9 @@ brew install mackup
 # sshuttle
 brew install sshuttle
 
+# Mac App Store
+brew install mas
+
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
 brew install brew-cask
