@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Installs Gulp.
-npm install -g gulp
-
 # Installs Space Hogs
 npm install -g space-hogs
 

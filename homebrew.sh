@@ -22,12 +22,6 @@ brew install zsh
 # Install GIT
 brew install git
 
-# Install Ruby Environment Management
-brew install rbenv
-
-# Install Ruby Version Plugin for rbenv
-brew install ruby-build
-
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
 
@@ -43,12 +37,8 @@ brew install mackup
 # sshuttle
 brew install sshuttle
 
-# Mac App Store
-brew install mas
-
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
-brew install brew-cask
 
 # Aerial screensaver
 brew cask install aerial

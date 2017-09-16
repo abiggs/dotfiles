@@ -33,7 +33,7 @@ hosts() {
     else
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
         sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-        sudo bash -c "echo 127.0.0.1 classnav.dev esurvey.dev eval.dev iadvise.dev tps.dev >> /etc/hosts"
+        sudo bash -c "echo 127.0.0.1 classnav.dev esurvey.dev eval.dev iadvise.dev ifinanace.dev tps.dev >> /etc/hosts"
     fi
 }
 
@@ -59,11 +59,6 @@ composer() {
     mv composer.phar /usr/local/bin/composer
 }
 
-laravel() {
-    printf '\033[0;34m%s\033[0m\n' "Installing Larvel..."
-    composer global require "laravel/installer"
-}
-
 sublimetext() {
     ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 }
@@ -77,7 +72,6 @@ gitfiles
 hosts
 ohmyzsh
 composer
-laravel
 sublimetext
 changeshell
 
