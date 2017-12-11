@@ -31,6 +31,9 @@ brew install wget
 # Install node
 brew install node
 
+# Install telnet
+brew install telnet
+
 # Install Mackup
 brew install mackup
 
