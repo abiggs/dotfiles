@@ -37,9 +37,6 @@ brew install telnet
 # Install Mackup
 brew install mackup
 
-# sshuttle
-brew install sshuttle
-
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
 

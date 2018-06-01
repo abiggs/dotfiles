@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+
 
 read -p "Is this \"Earth\" or \"Jupiter\"? or \"Mars\"? " COMPUTER_NAME
 case $COMPUTER_NAME in
@@ -33,7 +33,7 @@ hosts() {
     else
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
         sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-        sudo bash -c "echo 127.0.0.1 Jupiter classnav.test esurvey.test eval.test iadvise.test ifinance.test tps.test >> /etc/hosts"
+        sudo bash -c "echo 127.0.0.1 Jupiter classnav.test esurvey.test eval.test iadvise.test tps.test >> /etc/hosts"
     fi
 }
 
@@ -75,6 +75,6 @@ composer
 sublimetext
 changeshell
 
-source ~/.dotfiles/osx.sh
+source ~/.dotfiles/macos.sh
 
 printf '\033[0;34m%s\033[0m\n' "Dotfiles installed."
