@@ -52,15 +52,15 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 # defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 # Expand save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+# defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 
 # Expand print panel by default
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+# defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+# defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Save to disk (not to iCloud) by default
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+# defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
@@ -69,7 +69,7 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Remove duplicates in the “Open With” menu (also see `lscleanup` alias)
-/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
+# /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
 
 # Display ASCII control characters using caret notation in standard text views
 # Try e.g. `cd /tmp; unidecode "\x{0000}" > cc.txt; open -e cc.txt`
@@ -97,7 +97,7 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
 # sudo systemsetup -setcomputersleep Off > /dev/null
@@ -329,7 +329,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+# defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
@@ -343,10 +343,10 @@ chflags nohidden ~/Library
 
 # Expand the following File Info panes:
 # “General”, “Open with”, and “Sharing & Permissions”
-defaults write com.apple.finder FXInfoPanesExpanded -dict \
-	General -bool true \
-	OpenWith -bool true \
-	Privileges -bool true
+#defaults write com.apple.finder FXInfoPanesExpanded -dict \
+#	General -bool true \
+#	OpenWith -bool true \
+#	Privileges -bool true
 
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
@@ -703,13 +703,13 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 ###############################################################################
 
 # Enable the debug menu in Address Book
-defaults write com.apple.addressbook ABShowDebugMenu -bool true
+# defaults write com.apple.addressbook ABShowDebugMenu -bool true
 
 # Enable Dashboard dev mode (allows keeping widgets on the desktop)
 # defaults write com.apple.dashboard devmode -bool true
 
 # Enable the debug menu in iCal (pre-10.8)
-defaults write com.apple.iCal IncludeDebugMenu -bool true
+# defaults write com.apple.iCal IncludeDebugMenu -bool true
 
 # Use plain text mode for new TextEdit documents
 # defaults write com.apple.TextEdit RichText -int 0
@@ -718,8 +718,8 @@ defaults write com.apple.iCal IncludeDebugMenu -bool true
 # defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
 # Enable the debug menu in Disk Utility
-defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
-defaults write com.apple.DiskUtility advanced-image-options -bool true
+# defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
+# defaults write com.apple.DiskUtility advanced-image-options -bool true
 
 ###############################################################################
 # Mac App Store                                                               #
@@ -784,12 +784,12 @@ defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
 # defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
 
 # Use the system-native print preview dialog
-defaults write com.google.Chrome DisablePrintPreview -bool true
-defaults write com.google.Chrome.canary DisablePrintPreview -bool true
+# defaults write com.google.Chrome DisablePrintPreview -bool true
+# defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 
 # Expand the print dialog by default
-defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
-defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
+# defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
+# defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
 ###############################################################################
 # GPGMail 2                                                                   #
@@ -863,28 +863,28 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Activity Monitor" \
-	"Address Book" \
-	"Calendar" \
-	"cfprefsd" \
-	"Contacts" \
-	"Dock" \
-	"Finder" \
-	"Google Chrome Canary" \
-	"Google Chrome" \
-	"Mail" \
-	"Messages" \
-	"Opera" \
-	"Photos" \
-	"Safari" \
-	"SizeUp" \
-	"Spectacle" \
-	"SystemUIServer" \
-	"Terminal" \
-	"Transmission" \
-	"Tweetbot" \
-	"Twitter" \
-	"iCal"; do
-	killall "${app}" &> /dev/null
-done
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+#for app in "Activity Monitor" \
+#	"Address Book" \
+#	"Calendar" \
+#	"cfprefsd" \
+#	"Contacts" \
+#	"Dock" \
+#	"Finder" \
+#	"Google Chrome Canary" \
+#	"Google Chrome" \
+#	"Mail" \
+#	"Messages" \
+#	"Opera" \
+#	"Photos" \
+#	"Safari" \
+#	"SizeUp" \
+#	"Spectacle" \
+#	"SystemUIServer" \
+#	"Terminal" \
+#	"Transmission" \
+#	"Tweetbot" \
+#	"Twitter" \
+#	"iCal"; do
+#	killall "${app}" &> /dev/null
+#done
+#echo "Done. Note that some of these changes require a logout/restart to take effect."
