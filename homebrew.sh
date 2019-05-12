@@ -43,22 +43,20 @@ brew tap phinze/homebrew-cask
 # Brew Cask Installs
 brew cask install aerial
 brew cask install alfred
-brew cask install docker
-brew cask install dropbox
+brew cask install backblaze
 brew cask install firefox
 brew cask install google-chrome
 brew cask install jetbrains-toolbox
 brew cask install iterm2
 brew cask install kaleidoscope
+brew cask install handbrake
+brew cask install makemkv
 brew cask install navicat-premium
 brew cask install postman
-brew cask install ring
+brew cask install subler
 brew cask install sublime-text
 brew cas install tower
 brew cask install vmware-fusion
-
-# Install Evernote
-mas install 406056744
 
 # Install Things 3
 mas install 904280696
@@ -87,8 +85,8 @@ mas install 803453959
 # Install EpochTime
 mas install 595117824
 
-# Install Reeder 3
-mas install 880001334
+# Install Reeder 4
+mas install 1449412482
 
 # Install RadarScope
 mas install 432027450
@@ -99,8 +97,14 @@ mas install 568494494
 # Install BreakTime
 mas install 427475982
 
-# Install 1Password
-mas install 1333542190
+# Install Sip
+mas install 507257563
+
+# Install Day One
+mas install 1055511498
+
+# Install Amphetamine
+mas install 937984704
 
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
