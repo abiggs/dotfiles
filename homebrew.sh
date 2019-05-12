@@ -44,6 +44,7 @@ brew tap phinze/homebrew-cask
 brew cask install aerial
 brew cask install alfred
 brew cask install backblaze
+brew cask install carbon-copy-cloner
 brew cask install firefox
 brew cask install google-chrome
 brew cask install jetbrains-toolbox
@@ -55,7 +56,7 @@ brew cask install navicat-premium
 brew cask install postman
 brew cask install subler
 brew cask install sublime-text
-brew cas install tower
+brew cask install tower
 brew cask install vmware-fusion
 
 # Install Things 3
