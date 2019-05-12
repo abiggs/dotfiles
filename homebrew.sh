@@ -45,6 +45,7 @@ brew cask install aerial
 brew cask install alfred
 brew cask install backblaze
 brew cask install carbon-copy-cloner
+brew cask install docker
 brew cask install firefox
 brew cask install google-chrome
 brew cask install jetbrains-toolbox
