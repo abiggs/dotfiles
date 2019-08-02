@@ -3,8 +3,8 @@
 # Check for Homebrew
 if test ! $(which brew)
 then
-printf '\033[0;34m%s\033[0m\n' "Installing Homebrew..."
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  printf '\033[0;34m%s\033[0m\n' "Installing Homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
   printf '\033[0;34m%s\033[0m\n' "Homebrew already installed. Updating Homebrew..."
   # Make sure we’re using the latest Homebrew
@@ -46,22 +46,25 @@ brew tap phinze/homebrew-cask
 # Brew Cask Installs
 brew cask install aerial
 brew cask install alfred
-brew cask install backblaze
-brew cask install carbon-copy-cloner
 brew cask install docker
 brew cask install firefox
 brew cask install google-chrome
 brew cask install jetbrains-toolbox
 brew cask install iterm2
 brew cask install kaleidoscope
-brew cask install handbrake
-brew cask install makemkv
 brew cask install navicat-premium
 brew cask install postman
-brew cask install subler
 brew cask install sublime-text
 brew cask install tower
 brew cask install vmware-fusion
+
+if [ "$COMPUTER_NAME" = Earth ]; then 
+  brew cask install backblaze
+  brew cask install carbon-copy-cloner
+  brew cask install handbrake
+  brew cask install makemkv
+  brew cask install subler
+fi
 
 # Install Things 3
 mas install 904280696
