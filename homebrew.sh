@@ -114,6 +114,12 @@ mas install 1055511498
 # Install Amphetamine
 mas install 937984704
 
+# Install Pixelmator Pro
+mas install 1289583905
+
+# Install Ghostery Lite
+mas install 1436953057
+
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
 # Remove outdated versions from the cellar
