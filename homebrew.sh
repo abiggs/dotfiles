@@ -59,7 +59,7 @@ brew cask install sublime-text
 brew cask install tower
 brew cask install vmware-fusion
 
-if [ "$COMPUTER_NAME" = Earth ]; then 
+if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then 
   brew cask install backblaze
   brew cask install carbon-copy-cloner
   brew cask install handbrake
