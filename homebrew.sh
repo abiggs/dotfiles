@@ -48,6 +48,7 @@ brew cask install aerial
 brew cask install alfred
 brew cask install docker
 brew cask install firefox
+brew cask install firefox-developer-edition
 brew cask install google-chrome
 brew cask install jetbrains-toolbox
 brew cask install iterm2
