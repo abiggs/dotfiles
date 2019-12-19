@@ -43,6 +43,9 @@ brew install mas
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
 
+# Instsall alternate versions of casks.
+brew tap homebrew/cask-versions
+
 # Brew Cask Installs
 brew cask install aerial
 brew cask install alfred
