@@ -1,11 +1,11 @@
 
 
-read -p "Is this \"Aaron's iMac\" or \"Aaron's iMac Pro\"? or \"Aaron's MacBook Pro\"? " COMPUTER_NAME
+read -p "Is this \"Earth\" or \"Jupiter\" or \"Mars\"? " COMPUTER_NAME
 case $COMPUTER_NAME in
-    Aaron\'s\ iMac ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac...";;
-    Aaron\'s\ iMac\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac Pro...";;
-    Aaron\'s\ MacBook\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's MacBook Pro...";;
-    * ) echo "Please answer with \"Aaron's iMac\" or \"Aaron's iMac Pro\" or \"Aaron's MacBook Pro\"."; exit 0;;
+    Earth ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Earth...";;
+    Jupiter ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Jupiter...";;
+    Mars ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Mars...";;
+    * ) echo "Please answer with \"Earth\" or \"Jupiter\" or \"Mars\"."; exit 0;;
 esac
 
 gitfiles() {
