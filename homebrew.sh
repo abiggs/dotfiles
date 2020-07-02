@@ -60,6 +60,8 @@ brew cask install navicat-premium
 brew cask install postman
 brew cask install sublime-text
 brew cask install tower
+brew cask install vmware-fusion
+brew cask install zoomus
 
 if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then 
   brew cask install backblaze
@@ -67,10 +69,6 @@ if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then
   brew cask install handbrake
   brew cask install makemkv
   brew cask install subler
-fi
-
-if [ "$COMPUTER_NAME" = "Aaron's iMac Pro" || "$COMPUTER_NAME" = "Aaron's MacBook Pro" ]; then 
-  brew cask install vmware-fusion
 fi
 
 # Install Things 3
@@ -121,13 +119,11 @@ mas install 1289583905
 # Install Ghostery Lite
 mas install 1436953057
 
-if [ "$COMPUTER_NAME" = "Aaron's iMac Pro" || "$COMPUTER_NAME" = "Aaron's MacBook Pro" ]; then 
-  # Install BreakTime
-  mas install 427475982
-  
-  # Install Slack
-  mas install 803453959
-fi
+# Install Slack
+mas install 803453959
+
+# Install BreakTime
+mas install 427475982
 
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
