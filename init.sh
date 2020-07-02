@@ -69,13 +69,10 @@ source ~/.dotfiles/ruby.sh
 source ~/.dotfiles/node.sh
 
 gitfiles
+hosts
 ohmyzsh
 composer
 sublimetext
 changeshell
-
-if [ "$COMPUTER_NAME" = "Aaron's iMac Pro" || "$COMPUTER_NAME" = "Aaron's MacBook Pro" ]; then 
-    hosts
-fi
 
 printf '\033[0;34m%s\033[0m\n' "Dotfiles installed."
