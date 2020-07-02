@@ -60,7 +60,7 @@ brew cask install navicat-premium
 brew cask install postman
 brew cask install sublime-text
 brew cask install tower
-brew cask install vmware-fusion
+brew cask install vmware-horizon-client
 brew cask install zoomus
 
 if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then 
