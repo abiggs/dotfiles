@@ -106,9 +106,6 @@ mas install 1449412482
 # Install RadarScope
 mas install 432027450
 
-# Intall Pocket
-mas install 568494494
-
 # Install BreakTime
 mas install 427475982
 
