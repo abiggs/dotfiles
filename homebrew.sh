@@ -63,7 +63,8 @@ brew cask install navicat-premium
 brew cask install postman
 brew cask install sublime-text
 brew cask install tower
-brew cask install vmware-fusion
+brew cask install vmware-horizon-client
+brew cask install zoomus
 
 if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then 
   brew cask install backblaze
@@ -94,9 +95,6 @@ mas install 1153157709
 # Install Deliveries
 mas install 924726344
 
-# Install Slack
-mas install 803453959
-
 # Install EpochTime
 mas install 595117824
 
@@ -105,9 +103,6 @@ mas install 1449412482
 
 # Install RadarScope
 mas install 432027450
-
-# Install BreakTime
-mas install 427475982
 
 # Install Sip
 mas install 507257563
@@ -123,6 +118,12 @@ mas install 1289583905
 
 # Install Ghostery Lite
 mas install 1436953057
+
+# Install Slack
+mas install 803453959
+
+# Install BreakTime
+mas install 427475982
 
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
