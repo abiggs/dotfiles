@@ -43,6 +43,9 @@ brew install mas
 # Install YouTube DL
 brew install youtube-dl
 
+# Install FFMPEG
+brew install ffmpeg
+
 # Install Homebrew Cask for installing Mac apps.
 brew tap phinze/homebrew-cask
 
