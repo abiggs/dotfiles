@@ -59,20 +59,14 @@ composer() {
     mv composer.phar /usr/local/bin/composer
 }
 
-sublimetext() {
-    ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-}
-
-# Install Homebrew.
+# Install Scripts
 source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/ruby.sh
 source ~/.dotfiles/node.sh
-
 gitfiles
 hosts
-ohmyzsh
 composer
-sublimetext
+ohmyzsh
 changeshell
 
 printf '\033[0;34m%s\033[0m\n' "Dotfiles installed."
