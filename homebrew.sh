@@ -41,13 +41,15 @@ brew cask install navicat-premium
 brew cask install postman
 brew cask install sublime-text
 brew cask install tower
-brew cask install zoomus
+brew cask install zoom
 
 if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then 
+  brew install sshuttle
   brew cask install backblaze
   brew cask install carbon-copy-cloner
   brew cask install handbrake
   brew cask install makemkv
+  brew cask install monitorcontrol
   brew cask install subler
 fi
 
