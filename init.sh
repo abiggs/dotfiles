@@ -33,7 +33,7 @@ hosts() {
     else
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
         sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-        sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test tps.test >> /etc/hosts"
+        sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
     fi
 }
 
@@ -51,6 +51,7 @@ changeshell() {
         echo /usr/local/bin/zsh | sudo tee -a /etc/shells;
         chsh -s /usr/local/bin/zsh;
     fi
+    touch ~/.hushlogin
 }
 
 composer() {
