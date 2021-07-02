@@ -26,6 +26,10 @@ gitfiles() {
     done
 }
 
+ssh() {
+  sudo sh -c 'echo -n "ServerAliveInterval 120" >> /etc/ssh/ssh_config'
+}
+
 hosts() {
     if grep -q "# Docker Machine Sites" "/etc/hosts";
     then
@@ -65,6 +69,7 @@ source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/ruby.sh
 source ~/.dotfiles/node.sh
 gitfiles
+ssh
 hosts
 composer
 ohmyzsh
