@@ -19,38 +19,39 @@ brew install git
 brew install coreutils
 brew install mackup
 brew install mas
+brew install mkcert
+brew install nss
 brew install youtube-dl
 brew install ffmpeg
 brew install wget
 brew install node
 brew install telnet
-brew tap phinze/homebrew-cask
-brew tap homebrew/cask-versions
 
 # Brew Cask Installs
-brew cask install aerial
-brew cask install alfred
-brew cask install docker
-brew cask install firefox
-brew cask install firefox-developer-edition
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install jetbrains-toolbox
-brew cask install kaleidoscope
-brew cask install navicat-premium
-brew cask install postman
-brew cask install sublime-text
-brew cask install tower
-brew cask install zoom
+brew install aerial
+brew install alfred
+brew install homebrew/cask/docker
+brew install firefox
+brew install firefox-developer-edition
+brew install google-chrome
+brew install iterm2
+brew install jetbrains-toolbox
+brew install kaleidoscope
+brew install navicat-premium
+brew install postman
+brew install ray
+brew install sublime-text
+brew install tower
+brew install zoom
 
 if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then 
   brew install sshuttle
-  brew cask install backblaze
-  brew cask install carbon-copy-cloner
-  brew cask install handbrake
-  brew cask install makemkv
-  brew cask install monitorcontrol
-  brew cask install subler
+  brew install backblaze
+  brew install carbon-copy-cloner
+  brew install handbrake
+  brew install makemkv
+  brew install monitorcontrol
+  brew install subler
 fi
 
 # Mac App Store Installs
@@ -93,9 +94,6 @@ mas install 937984704
 
 # Install Pixelmator Pro
 mas install 1289583905
-
-# Install Ghostery Lite
-mas install 1436953057
 
 # Install EpochTime
 mas install 595117824
