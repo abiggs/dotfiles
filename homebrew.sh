@@ -30,6 +30,7 @@ brew install telnet
 # Brew Cask Installs
 brew install aerial
 brew install alfred
+brew install asana
 brew install homebrew/cask/docker
 brew install firefox
 brew install firefox-developer-edition
@@ -38,6 +39,7 @@ brew install iterm2
 brew install jetbrains-toolbox
 brew install kaleidoscope
 brew install navicat-premium
+brew install notion
 brew install postman
 brew install ray
 brew install sublime-text
