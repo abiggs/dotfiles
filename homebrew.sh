@@ -30,10 +30,9 @@ brew install telnet
 # Brew Cask Installs
 brew install aerial
 brew install alfred
-brew install asana
+brew install cleanshot
 brew install homebrew/cask/docker
 brew install firefox
-brew install firefox-developer-edition
 brew install google-chrome
 brew install iterm2
 brew install jetbrains-toolbox
@@ -52,7 +51,6 @@ if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then
   brew install carbon-copy-cloner
   brew install handbrake
   brew install makemkv
-  brew install monitorcontrol
   brew install subler
 fi
 
@@ -80,10 +78,10 @@ mas install 409203825
 mas install 1153157709
 
 # Install Deliveries
-mas install 924726344
+mas install 290986013
 
 # Install Reeder 5
-mas install 1529445840
+mas install 1529448980
 
 # Install RadarScope
 mas install 432027450
