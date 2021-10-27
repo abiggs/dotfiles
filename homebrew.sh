@@ -36,7 +36,6 @@ brew install firefox
 brew install google-chrome
 brew install iterm2
 brew install jetbrains-toolbox
-brew install kaleidoscope
 brew install navicat-premium
 brew install notion
 brew install postman
