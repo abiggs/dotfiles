@@ -37,10 +37,8 @@ brew install google-chrome
 brew install iterm2
 brew install jetbrains-toolbox
 brew install navicat-premium
-brew install notion
 brew install postman
 brew install ray
-brew install sublime-text
 brew install tower
 brew install zoom
 
