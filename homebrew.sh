@@ -53,6 +53,9 @@ fi
 
 # Mac App Store Installs
 
+# Install BetterSnapTool
+mas install 417375580
+
 # Install BreakTime
 mas install 427475982
 
