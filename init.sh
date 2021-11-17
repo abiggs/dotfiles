@@ -27,7 +27,7 @@ gitfiles() {
 }
 
 ssh() {
-  sudo sh -c 'echo -n "ServerAliveInterval 120" >> /etc/ssh/ssh_config'
+  sudo sh -c 'echo "ServerAliveInterval 120" >> /etc/ssh/ssh_config'
 }
 
 hosts() {
