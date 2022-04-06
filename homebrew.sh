@@ -42,8 +42,7 @@ brew install ray
 brew install tower
 brew install zoom
 
-if [ "$COMPUTER_NAME" = "Aaron's iMac" ]; then 
-  brew install sshuttle
+if [ "$COMPUTER_NAME" = "Aaron's Mac Studio" ]; then 
   brew install backblaze
   brew install carbon-copy-cloner
   brew install handbrake
