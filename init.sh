@@ -2,10 +2,10 @@
 
 read -p "Is this \"Aaron's Mac Studio\" or \"Aaron's iMac Pro\"? or \"Aaron's MacBook Pro\"? " COMPUTER_NAME
 case $COMPUTER_NAME in
-    Aaron\'s\ iMac ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac...";;
+    Aaron\'s\ Mac\ Studio ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac...";;
     Aaron\'s\ iMac\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac Pro...";;
     Aaron\'s\ MacBook\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's MacBook Pro...";;
-    * ) echo "Please answer with \"Aaron's iMac\" or \"Aaron's iMac Pro\" or \"Aaron's MacBook Pro\"."; exit 0;;
+    * ) echo "Please answer with \"Aaron's Mac Studio\" or \"Aaron's iMac Pro\" or \"Aaron's MacBook Pro\"."; exit 0;;
 esac
 
 gitfiles() {
