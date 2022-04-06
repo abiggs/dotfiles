@@ -1,6 +1,6 @@
 
 
-read -p "Is this \"Aaron's iMac\" or \"Aaron's iMac Pro\"? or \"Aaron's MacBook Pro\"? " COMPUTER_NAME
+read -p "Is this \"Aaron's Mac Studio\" or \"Aaron's iMac Pro\"? or \"Aaron's MacBook Pro\"? " COMPUTER_NAME
 case $COMPUTER_NAME in
     Aaron\'s\ iMac ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac...";;
     Aaron\'s\ iMac\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac Pro...";;
