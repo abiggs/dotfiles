@@ -50,10 +50,10 @@ changeshell() {
     printf '\033[0;34m%s\033[0m\n' "Changing shell..."
     if [ `grep /usr/local/bin/zsh /etc/shells` ];
     then
-        echo /usr/local/bin/zsh | chsh -s /usr/local/bin/zsh;
+        echo /usr/bin/zsh | chsh -s /usr/bin/zsh;
     else
-        echo /usr/local/bin/zsh | sudo tee -a /etc/shells;
-        chsh -s /usr/local/bin/zsh;
+        echo /usr/bin/zsh | sudo tee -a /etc/shells;
+        chsh -s /usr/bin/zsh;
     fi
     touch ~/.hushlogin
 }
