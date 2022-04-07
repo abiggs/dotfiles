@@ -48,7 +48,7 @@ ohmyzsh() {
 
 changeshell() {
     printf '\033[0;34m%s\033[0m\n' "Changing shell..."
-    if [ `grep /usr/local/bin/zsh /etc/shells` ];
+    if [ `grep /usr/bin/zsh /etc/shells` ];
     then
         echo /usr/bin/zsh | chsh -s /usr/bin/zsh;
     else
