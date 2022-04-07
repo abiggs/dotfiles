@@ -31,6 +31,7 @@ brew install telnet
 brew install aerial
 brew install alfred
 brew install cleanshot
+brew install kaleidoscope
 brew install homebrew/cask/docker
 brew install firefox
 brew install google-chrome
