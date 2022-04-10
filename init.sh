@@ -2,7 +2,7 @@
 
 read -p "Is this \"Aaron's Mac Studio\" or \"Aaron's iMac Pro\" or \"Aaron's MacBook Air\" or \"Aaron's MacBook Pro\"? " COMPUTER_NAME
 case $COMPUTER_NAME in
-    Aaron\'s\ Mac\ Studio ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac...";;
+    Aaron\'s\ Mac\ Studio ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's Mac Studio...";;
     Aaron\'s\ iMac\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac Pro...";;
     Aaron\'s\ MacBook\ Air ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's MacBook Air...";;
     Aaron\'s\ MacBook\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's MacBook Pro...";;
