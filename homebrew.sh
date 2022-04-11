@@ -76,9 +76,6 @@ mas install 409203825
 # Install Speedtest
 mas install 1153157709
 
-# Install Deliveries
-mas install 290986013
-
 # Install Reeder 5
 mas install 1529448980
 
