@@ -5,8 +5,12 @@ if test ! $(which brew)
 then
   printf '\033[0;34m%s\033[0m\n' "Installing Homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
-  eval "$(/opt/homebrew/bin/brew shellenv)"
+  
+  if [ "$COMPUTER_NAME" = "Aaron's Mac Studio" ]; then 
+    echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
+  
 else
   printf '\033[0;34m%s\033[0m\n' "Homebrew already installed. Updating Homebrew..."
   brew update
