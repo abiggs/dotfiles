@@ -32,6 +32,7 @@ brew install telnet
 # Brew Cask Installs
 brew install aerial
 brew install alfred
+brew install brave-browser
 brew install cleanshot
 brew install homebrew/cask/docker
 brew install firefox
