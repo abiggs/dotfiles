@@ -86,6 +86,9 @@ mas install 409203825
 # Install Speedtest
 mas install 1153157709
 
+# Install Parcel
+mas install 639968404
+
 # Install Reeder 5
 mas install 1529448980
 
