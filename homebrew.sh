@@ -39,7 +39,7 @@ brew install node
 brew install telnet
 
 # Brew Cask Installs
-brew install aerial
+# brew install aerial
 brew install alfred
 brew install brave-browser
 brew install cleanshot
@@ -53,6 +53,7 @@ brew install navicat-premium
 brew install postman
 brew install ray
 brew install tower
+brew install visual-studio-code
 brew install zoom
 
 if [ "$COMPUTER_NAME" = "Aaron's Mac Studio" ]; then 
