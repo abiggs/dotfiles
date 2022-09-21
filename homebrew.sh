@@ -4,17 +4,17 @@
 if test ! $(which brew)
 then
   printf '\033[0;34m%s\033[0m\n' "Installing Homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install/HEAD/install.sh)"
   
-  if [ "$COMPUTER_NAME" = "Aaron's Mac Studio" ]; then 
-    echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-  fi
+  #if [ "$COMPUTER_NAME" == "Aaron's Mac Studio" ]; then 
+  # echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
+  #  eval "$(/opt/homebrew/bin/brew shellenv)"
+  #fi
   
-  if [ "$COMPUTER_NAME" = "Aaron's MacBook Air" ]; then 
-    echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-  fi
+#  if [ "$COMPUTER_NAME" == "Aaron's MacBook Air" ]; then 
+#    echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
+#    eval "$(/opt/homebrew/bin/brew shellenv)"
+#  fi
   
 else
   printf '\033[0;34m%s\033[0m\n' "Homebrew already installed. Updating Homebrew..."
@@ -56,7 +56,7 @@ brew install tower
 brew install visual-studio-code
 brew install zoom
 
-if [ "$COMPUTER_NAME" = "Aaron's Mac Studio" ]; then 
+if [ "$COMPUTER_NAME" == "Aaron's Mac Studio" ]; then 
   brew install backblaze
   brew install carbon-copy-cloner
   brew install handbrake
