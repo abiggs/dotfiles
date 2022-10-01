@@ -5,17 +5,9 @@ if test ! $(which brew)
 then
   printf '\033[0;34m%s\033[0m\n' "Installing Homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install/HEAD/install.sh)"
-  
-  #if [ "$COMPUTER_NAME" == "Aaron's Mac Studio" ]; then 
-  # echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
-  #  eval "$(/opt/homebrew/bin/brew shellenv)"
-  #fi
-  
-#  if [ "$COMPUTER_NAME" == "Aaron's MacBook Air" ]; then 
-#    echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
-#    eval "$(/opt/homebrew/bin/brew shellenv)"
-#  fi
-  
+
+  echo 'eval "$ (/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 else
   printf '\033[0;34m%s\033[0m\n' "Homebrew already installed. Updating Homebrew..."
   brew update
@@ -28,7 +20,6 @@ brew upgrade
 brew install zsh
 brew install git
 brew install coreutils
-brew install mackup
 brew install mas
 brew install mkcert
 brew install nss
@@ -39,13 +30,11 @@ brew install node
 brew install telnet
 
 # Brew Cask Installs
-# brew install aerial
 brew install alfred
 brew install brave-browser
 brew install cleanshot
 brew install homebrew/cask/docker
 brew install firefox
-brew install google-chrome
 brew install iterm2
 brew install jetbrains-toolbox
 brew install kaleidoscope

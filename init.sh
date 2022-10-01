@@ -1,12 +1,10 @@
 
 
-read -p "Is this \"Aaron's Mac Studio\" or \"Aaron's iMac Pro\" or \"Aaron's MacBook Air\" or \"Aaron's MacBook Pro\"? " COMPUTER_NAME
+read -p "Is this \"Aaron's Mac Studio\" or \"Aaron's MacBook Pro\"? " COMPUTER_NAME
 case $COMPUTER_NAME in
     Aaron\'s\ Mac\ Studio ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's Mac Studio...";;
-    Aaron\'s\ iMac\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's iMac Pro...";;
-    Aaron\'s\ MacBook\ Air ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's MacBook Air...";;
     Aaron\'s\ MacBook\ Pro ) printf '\033[0;34m%s\033[0m\n' "Installing dotfiles on Aaron's MacBook Pro...";;
-    * ) echo "Please answer with \"Aaron's Mac Studio\" or \"Aaron's iMac Pro\" or \"Aaron's MacBook Pro\"."; exit 0;;
+    * ) echo "Please answer with \"Aaron's Mac Studio\" or \"Aaron's MacBook Pro\"."; exit 0;;
 esac
 
 gitfiles() {
@@ -38,7 +36,12 @@ hosts() {
     else
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
         sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-        sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
+
+        if [ "$COMPUTER_NAME" == "Aaron's MacBook Pro" ]; then
+          printf '\033[0;34m%s\033[0m\n' "No Hosts Configured..."
+        else
+          sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
+        fi
     fi
 }
 
@@ -67,8 +70,11 @@ composer() {
 
 # Install Scripts
 source ~/.dotfiles/homebrew.sh
-source ~/.dotfiles/ruby.sh
-source ~/.dotfiles/node.sh
+
+if [ "$COMPUTER_NAME" == "Aaron's MacBook Pro" ]; then
+  source ~/.dotfiles/ruby.sh
+  source ~/.dotfiles/node.sh
+fi
 gitfiles
 ssh
 hosts
