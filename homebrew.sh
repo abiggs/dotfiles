@@ -5,6 +5,11 @@ if test ! $(which brew)
 then
   printf '\033[0;34m%s\033[0m\n' "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  
+  echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/abiggs/.zprofile
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/abiggs/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+ 
 else
   printf '\033[0;34m%s\033[0m\n' "Homebrew already installed. Updating Homebrew..."
   brew update
