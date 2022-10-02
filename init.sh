@@ -35,8 +35,12 @@ hosts() {
         printf '\033[0;34m%s\033[0m\n' "Hosts already configured."
     else
         printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
-        sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-        sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
+        if [ "$COMPUTER_NAME" == "Aaron's Mac Studio" ]; then
+            printf '\033[0;34m%s\033[0m\n' "No Hosts to Configure..."
+        elif [ "$COMPUTER_NAME" == "Aaron's MacBook Pro" ]; then
+            sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
+            sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
+        fi
     fi
 }
 
@@ -65,8 +69,10 @@ composer() {
 
 # Install Scripts
 source ~/.dotfiles/homebrew.sh
-source ~/.dotfiles/ruby.sh
-source ~/.dotfiles/node.sh
+if [ "$COMPUTER_NAME" == "Aaron's MacBook Pro" ]; then
+  source ~/.dotfiles/ruby.sh
+  source ~/.dotfiles/node.sh
+fi
 gitfiles
 ssh
 hosts
