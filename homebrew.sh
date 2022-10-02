@@ -40,6 +40,7 @@ brew install firefox
 brew install iterm2
 brew install jetbrains-toolbox
 brew install kaleidoscope
+brew install mackup
 brew install navicat-premium
 brew install postman
 brew install ray
