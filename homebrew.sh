@@ -27,6 +27,7 @@ brew install mkcert
 brew install nss
 brew install youtube-dl
 brew install ffmpeg
+brew install mackup
 brew install wget
 brew install node
 brew install telnet
@@ -104,9 +105,6 @@ mas install 507257563
 
 # Install Slack
 mas install 803453959
-
-# Install Overcast
-mas install 888422857
 
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
