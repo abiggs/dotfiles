@@ -64,9 +64,6 @@ mas install 427475982
 # Install Things 3
 mas install 904280696
 
-# Install Tweetbot 3
-mas install 1384080005
-
 # Install Keynote
 mas install 409183694
 
