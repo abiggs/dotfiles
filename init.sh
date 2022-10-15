@@ -34,9 +34,11 @@ hosts() {
     then
         printf '\033[0;34m%s\033[0m\n' "Hosts already configured."
     else
-        printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
-        sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-        sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
+        if [ "$COMPUTER_NAME" == "Aaron's MacBook Pro" ]; then 
+            printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
+            sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
+            sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
+        fi
     fi
 }
 
