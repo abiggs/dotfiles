@@ -27,7 +27,6 @@ brew install mkcert
 brew install nss
 brew install youtube-dl
 brew install ffmpeg
-brew install mackup
 brew install wget
 brew install node
 brew install telnet
