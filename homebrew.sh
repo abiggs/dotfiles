@@ -22,7 +22,6 @@ brew upgrade
 brew install zsh
 brew install git
 brew install coreutils
-brew install mackup
 brew install mas
 brew install mkcert
 brew install nss
