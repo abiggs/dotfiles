@@ -36,8 +36,8 @@ hosts() {
     else
         if [ "$COMPUTER_NAME" == "Aaron's MacBook Pro" ]; then 
             printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
-            sudo bash -c "echo '# Docker Machine Sites' >> /etc/hosts"
-            sudo bash -c "echo 127.0.0.1 Jupiter casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
+            sudo bash -c "echo '# Docker Desktop Sites' >> /etc/hosts"
+            sudo bash -c "echo 127.0.0.1 casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
         fi
     fi
 }
@@ -59,20 +59,12 @@ changeshell() {
     touch ~/.hushlogin
 }
 
-composer() {
-    printf '\033[0;34m%s\033[0m\n' "Installing Composer..."
-    curl -sS https://getcomposer.org/installer | php
-    mv composer.phar /usr/local/bin/composer
-}
-
 # Install Scripts
 source ~/.dotfiles/homebrew.sh
 source ~/.dotfiles/ruby.sh
-source ~/.dotfiles/node.sh
 gitfiles
 ssh
 hosts
-composer
 ohmyzsh
 changeshell
 
