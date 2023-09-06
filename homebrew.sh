@@ -24,16 +24,11 @@ brew install git
 brew install coreutils
 brew install mas
 brew install mkcert
-brew install nss
-brew install youtube-dl
-brew install ffmpeg
 brew install wget
 brew install node
 brew install telnet
 
 # Brew Cask Installs
-brew install alfred
-brew install brave-browser
 brew install cleanshot
 brew install homebrew/cask/docker
 brew install firefox
@@ -48,6 +43,8 @@ brew install visual-studio-code
 brew install zoom
 
 if [ "$COMPUTER_NAME" == "Aaron's Mac Studio" ]; then 
+  brew install youtube-dl
+  brew install ffmpeg
   brew install backblaze
   brew install carbon-copy-cloner
   brew install handbrake
@@ -84,15 +81,6 @@ mas install 1529448980
 # Install RadarScope
 mas install 432027450
 
-# Install Day One
-mas install 1055511498
-
-# Install Amphetamine
-mas install 937984704
-
-# Install Pixelmator Pro
-mas install 1289583905
-
 # Install EpochTime
 mas install 595117824
 
@@ -101,6 +89,14 @@ mas install 507257563
 
 # Install Slack
 mas install 803453959
+
+if [ "$COMPUTER_NAME" == "Aaron's Mac Studio" ]; then 
+  # Install Day One
+  mas install 1055511498
+  
+  # Install Pixelmator Pro
+  mas install 1289583905
+fi
 
 printf '\033[0;34m%s\033[0m\n' "Cleaning Homebrew Cellar..."
 
