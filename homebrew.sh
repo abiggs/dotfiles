@@ -29,15 +29,16 @@ brew install node
 brew install telnet
 
 # Brew Cask Installs
-brew install cleanshot
+brew install --cask bartender
+brew install --cask cleanshot
 brew install homebrew/cask/docker
-brew install firefox
+brew install brew install --cask firefox
 brew install iterm2
 brew install jetbrains-toolbox
-brew install kaleidoscope
 brew install navicat-premium
 brew install postman
 brew install ray
+brew install --cask raycast
 brew install tower
 brew install visual-studio-code
 brew install zoom
