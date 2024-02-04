@@ -5,7 +5,5 @@
 .svn
 *~
 *.rbc
-*.sublime-project
-*.sublime-workspace
 *.swp
 vendor/
