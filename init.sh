@@ -37,7 +37,7 @@ hosts() {
         if [ "$COMPUTER_NAME" == "Aaron's MacBook Pro" ]; then 
             printf '\033[0;34m%s\033[0m\n' "Configuring Hosts..."
             sudo bash -c "echo '# Docker Desktop Sites' >> /etc/hosts"
-            sudo bash -c "echo 127.0.0.1 casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test ses.test tps.test >> /etc/hosts"
+            sudo bash -c "echo 127.0.0.1 casapps.test classnav.test esurvey.test eval.test iadvise.test icoach.test coursereflection.test ses.test tps.test >> /etc/hosts"
         fi
     fi
 }
